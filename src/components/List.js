@@ -1,12 +1,17 @@
 import React from 'react';
-
+import products from '../products';
+import Coockie from './Coockie';
+import { Helmet } from 'react-helmet';
 const List = () => {
   return (
-    <div className="container mt5">
+    <div className="container mt-5">
+      <Helmet>
+        <title>List</title>
+      </Helmet>
       <div className="row">
-        <div className="col-lg-12">
-          <h1>List</h1>
-        </div>
+        {products.map((coockie) => {
+          return <Coockie key={coockie.id} coockie={coockie} />;
+        })}
       </div>
     </div>
   );

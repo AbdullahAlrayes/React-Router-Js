@@ -8,7 +8,12 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand>
           <Link className="navbar-brand" to="/">
-            React Router Project
+            <img
+              src="https://theteamwarehouse.nyc3.digitaloceanspaces.com/WareHouse/WareHouse/Logo%20Colored%20Big%20V7.png"
+              alt=""
+              height={50}
+              width={120}
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
